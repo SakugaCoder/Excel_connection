@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'fontello';
+    src: url('../fonts/fontello.ttf');
+}
+
+@font-face{
+    font-family: 'Source sans pro';
+    src: url('../fonts/Source_sans_pro/SourceSansPro-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Jua';
+    src: url('../fonts/Jua/Jua-Regular.ttf');
+}
+
+body{
+    background-color: #fff;
+    width:100%;
+}
+
+.main_title{
+    display:block;
+    width:100%;
+    min-height: 20vh;
+    padding:20px 0px;
+    background-color: #ffffff;
+}
+
+.main_title h2{
+    font-family: 'Jua';
+    text-align:center;
+    color: #000;
+    font-size: 50px;
+}
+
+.state_content-1, .state_content-0{
+    margin: 100px 0px;
+    padding: 20px 10px;
+}
+
+
+
+.state_content-1 h3, .state_content-0 h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Jua';
+    font-size: 28px;
+}
+
+.state_content-1 h3 span{
+    color: #58B19F;
+}
+
+.state_content-0 h3 span{
+    color: #ff4757;
+}
+
+.container-fluid{
+    background-color: #2f3542;
+    background-image: url('../img/status_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bottom_content{
+    clear: both;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom_content button{
+    display: block;
+    font-size: 18px;
+    font-family: 'Source sans pro';
+    margin: auto;
+    padding: 25px 40px;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-radius: 20px;
+    transition: all ease 0.4s;
+    border: 0.5px solid #000;
+}
+
+.bottom_content button:hover{
+    background-color: #2f3542;
+    color: #fff;
+}
+
+.bottom_content button span{
+    color: aquamarine;
+}

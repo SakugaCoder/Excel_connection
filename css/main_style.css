@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'fontello';
+    src: url('../fonts/fontello.ttf');
+}
+
+@font-face{
+    font-family: 'Source sans pro';
+    src: url('../fonts/Source_sans_pro/SourceSansPro-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Jua';
+    src: url('../fonts/Jua/Jua-Regular.ttf');
+}
+
+body{
+    background-color: #303952;
+    width:100%;
+}
+
+.main_title{
+    display:block;
+    width:100%;
+    min-height: 20vh;
+    padding:20px 0px;
+    background-color: #fff;
+}
+
+.main_title h2{
+    font-family: 'Jua';
+    text-align:center;
+    color: #000;
+    font-size: 50px;
+}
+
+.container-fluid{
+    min-height: 60vh;
+    background-image: url('../img/container_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.data-1, .data-2, .data-3, .data-4{
+    padding: 20px;
+}
+
+
+.data-1 p, .data-2 p, .data-3 p, .data-4 p{
+    font-size: 18px;
+    font-family: 'Source sans pro';
+    color: #fff;
+    text-align: center;
+}
+
+.data-1 input[type="number"], .data-2 input[type="number"], .data-3 input[type="number"],
+ .data-4 input[type="number"]{
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    font-size: 70px;
+    font-family: 'Jua';
+    text-align: center;
+}
+
+.bottom_content{
+    clear: both;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_content button{
+    display: block;
+    font-size: 18px;
+    font-family: 'Source sans pro';
+    margin: auto;
+    padding: 25px 40px;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-radius: 20px;
+    transition: all ease 0.4s;
+    border: 0.5px solid #000;
+}
+
+.bottom_content button:hover{
+    background-color: #2f3542;
+    color: #fff;
+}
+
+
+.bottom_content button span{
+    color: aquamarine;
+}
