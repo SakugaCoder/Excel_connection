@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+
+    <title>Principal</title>
+</head>
+<body>
+    <div class="main_title">
+        <h2>¡Actualiza los datos!</h2>
+    </div>
+
+    <div class="container-fluid">
+        <form action="send_data.php" method="post" id="data_form">
+            <div class="row">
+                    <div class="col-md-3 col-sm-3"></div>
+
+                    <div class="col-md-3 col-sm-3 data-1">
+                        <p>Data 1</p>
+                        <input type="number" id="data_1" name="data_1" placeholder="" required>
+                    </div>
+                    <div class="col-md-3 col-sm-3 data-2">
+                        <p>Data 2</p>
+                        <input type="number" id="data_2" name="data_2" placeholder="" required>
+                    </div>
+                    <div class="col-md-3 col-sm-3"></div>
+            </div>
+        
+            <div class="row">
+                    <div class="col-md-3 col-sm-3"></div>
+
+                    <div class="col-md-3 col-sm-3 data-3">
+                        <p>Data 3</p>
+                        <input type="number" id="data_3" name="data_3" placeholder="" required>
+                    </div>
+                    <div class="col-md-3 col-sm-3 data-4">
+                        <p>Data 4</p>
+                        <input type="number" id="data_4" name="data_4" placeholder="" required>
+                    </div>
+                    <div class="col-md-3"></div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bottom_content">
+        <button id="button_send" onclick="verify_data()">
+            Actualizar <span class="icon-spin3" style="color:"></span>
+        </button>
+    </div>
+
+    <script>
+            var button_send = document.getElementById("button_send");
+
+            var form_data = document.getElementById("data_form");
+            var data_1, data_2, data_3, data_4;
+
+            function verify_data(){
+                data_1 = document.getElementById("data_1").value;
+                data_2 = document.getElementById("data_2").value;
+                data_3 = document.getElementById("data_3").value;
+                data_4 = document.getElementById("data_4").value;
+                console.log(data_1);
+                console.log(data_2);
+                console.log(data_3);
+                console.log(data_4);
+                if(data_1 == "" || data_2 == "" || data_3 == "" || data_4 == ""){
+                    alert("Error: No hay datos");
+                }
+
+                else if( (data_1 > 1000 || data_1 < 1) || (data_2 > 1000 || data_2 < 1) ||
+                (data_3 > 1000 || data_3 < 1) || (data_4 > 1000 || data_4 < 1)){
+                    alert("Error: rango demedido");
+                }
+
+                else{
+                    form_data.submit();
+                }
+            }
+
+    </script>
+</body>
+</html>
